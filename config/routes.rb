@@ -257,9 +257,10 @@ Buscador::Application.routes.draw do
   namespace :plantid do
     resources :plantas do
       resources :imagenes
-      resources :catalogos
+      resources :catalogos      
       resources :bibliografias
     end
+    get 'load_bibliosuggestions/:q' => 'plantas#load_bibliosuggestions'
   end
   
   # I. Clasificación y descripción de la especie

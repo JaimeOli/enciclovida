@@ -2,7 +2,7 @@ class Plantid::Planta < Plantidabs
   self.table_name = "#{CONFIG.bases.plantid}.plantas"
 
   validates :especie_id, presence: true , length: {minimum: 1}
-  validates :nombre_comun, presence: true, length: {maximum: 45}
+  validates :nombre_cientifico, presence: true
   validates :usuario_id, presence: true
 
   has_many :plantabibliografias, class_name: 'Plantid::PlantaBibliografia', inverse_of: :planta

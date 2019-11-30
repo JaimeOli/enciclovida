@@ -76,6 +76,12 @@ skip_before_action :set_locale
     end
   end
 
+  def load_bibliosuggestions
+    @find = Bibliografia.where("CitaCompleta LIKE ?","%#{params[:q]}%")
+    puts @find.inspect
+    render json: @find
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_planta

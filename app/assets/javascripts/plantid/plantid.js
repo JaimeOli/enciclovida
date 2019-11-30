@@ -12,3 +12,6 @@
 //
 
 //= require cocoon
+//= require plantid/typeahead.bundle
+//= require plantid/bloodhound
+//= require plantid/typeahead.jquery

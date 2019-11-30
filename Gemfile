@@ -35,8 +35,8 @@ gem 'pg'
 gem 'puma', '~> 3.7'  # Use Puma as the app server
 gem 'rack-contrib'
 gem 'rack-google-analytics'
-gem 'carrierwave', :require => 'carrierwave/orm/activerecord'
 gem 'rails', '5.1.6.2'
+gem 'rails-jquery-autocomplete'
 gem 'railties'
 gem 'rake'
 gem 'recaptcha', :require => 'recaptcha/rails'  # Con el api de google
